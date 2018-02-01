@@ -1,0 +1,477 @@
+/* A CSS style file for the Wright Family web pages */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(includes/navbar.css);
+/*@import url(includes/mobile_devices.css);*/
+/*@import url(includes/new_navbar_accordian.css);*/
+
+/* headings */
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: .67em;
+    margin-bottom: .67em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-weight: bold;
+	color: blue;
+  	text-align: center;
+
+	}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-top: .83em;
+    margin-bottom: .83em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-weight: bold;
+	color: green;
+	text-align: center;
+	text-decoration: underline;
+
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+}
+h4 {
+    display: block;
+	font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+}
+h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+}
+h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+/*links*/
+a:link, a:visited{
+	text-decoration: none;
+	color: blue;
+
+	}
+ a:hover, a:active{
+	text-decoration: underline;
+	color: blue;
+	}
+	
+/*Link Tooltip*/
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    /*background: LightCyan; /*Box Background*/
+    /*background: rgba(0,0,0,.8);*/
+    border-radius: 5px;
+    bottom: 26px;
+    color: blue; /*The font color*/
+    content: attr(title);
+	left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+	font-size: .75em;
+	opacity: 0.1;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    /*border-color: #999 transparent; /*The color of the arrow*/
+    /*border-color: LightCyan;*/
+	border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+/*Buttons*/
+
+.button{
+	height:3em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	border-style: groove;
+	/*border:1px solid black;*/
+	border-radius:5px;
+	margin: 5px 15px 5px 15px;
+	background-color:lightgrey;
+}
+
+.button:hover{
+		background-color:white;
+}
+
+
+
+/*Tables*/
+/* General Tables*/
+table#t001, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+
+}
+
+
+table#t002, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	text-align: left;
+	margin-left: 2em;
+	margin-right: 2em;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td#td01{
+	background-color: silver;
+}
+
+th#th01{
+	background-color: lightslategrey;
+	}
+
+
+table#t003, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+	border: 0;
+}
+table.search{
+	width: auto;
+	font-size: 1em;
+	padding: 0 0 0 0;
+	vertical-align: top;
+	margin-left: 0;
+	margin-right: 0;
+    vertical-align: middle;
+}
+
+table.search th{
+	width: auto;
+	padding: 0;
+	vertical-align: middle;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-style: normal;
+	border: 0;
+	font-size: small;
+	font-weight: bold;
+	/*background-color: #4CAF50;*/
+	
+}
+
+
+
+table.search td{
+	width: auto;
+	padding: 0;
+	vertical-align: middle;
+	margin: 0 2em 0 0;
+	font-style: normal;
+	border: 0;
+	font-size: x-small;
+	
+}
+
+
+/*Contacts Table */
+table#tcontact{
+	width: auto;
+	font-size: 1em;
+
+}
+
+pre {
+    white-space: pre-wrap;
+}
+/*Format Paragraphs*/
+p {
+	margin-bottom: .67em;
+	margin-top: .67em;
+	/*margin-left: 2em;*/
+	text-align: left;
+	font-size: 1em;
+	/*background-color: olive;*/
+	
+}
+
+.hang {
+	text-indent: -.67em; margin-left: .67em; 
+}
+	
+.xxsmall {
+	font-size: xx-small;
+ }
+ 
+ .reference{
+	font-size: xx-small;
+	margin-bottom: .3em;
+	margin-top: 0; 
+ }
+.right{
+	float: right;
+}
+
+cite {
+	font-size: 50%;
+}
+
+/*Format Let's Encrypt logo display*/
+.notes {
+	font-size: 60%;
+	width: auto;
+	padding: 0 0 0 0;
+	margin: 0 1em 0 1em;
+	/*border: 5px solid red;*/
+	
+}
+.le {
+	max-width: 30pt;
+	vertical-align: middle;
+	/*border: 1pt solid black;*/
+	
+}
+
+/*Page Layout*/
+
+*{
+	margin: 0
+}
+html, body {
+	font-size: 100%;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	/*display: -ms-flexbox;      /* TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+.site {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	/*display: -ms-flexbox;      /*TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	width: 100%;
+	height: 100vh;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	/*margin-left: 2em;
+	margin-right: 2em;
+	background: white;*/
+	/*background: LightCyan;*/
+	font-family: 'Nunito Sans', 'Raleway', Verdana, Helvetica, Arial, sans-serif;
+	}
+
+.site-header{
+	/*width: 100%; */           /* For old syntax, otherwise collapses. */
+ 	-ms-flex-shrink: 0;    		/* TWEENER - IE 10, IE 11 */
+	-webkit-flex-shrink: 0; 	/* NEW - Chrome */
+	flex-shrink: 0;  		/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.site-header div{
+	/*background: #808080 !important;
+	color: white;*/
+}
+
+.header-container{
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  	/*display: -ms-flexbox;      /* TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/*border: 1pt solid red;*/
+}
+
+.header-container div:nth-of-type(2){
+	-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1;         /* OLD - Firefox 19- */
+ 	/*width: 100%;*/              /* For old syntax, otherwise collapses. */
+	-ms-flex: 1;              /* IE 10, IE 11 */
+	-webkit-flex: 1;          /* Chrome */
+	flex: 1;  		  		  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.header-column-center {
+	-webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+	/*width: 100%; */			  	/* For old syntax, otherwise collapses. */
+	-ms-flex-order: 2;        		/* TWEENER - IE 10, IE 11 */
+	-webkit-order: 2;         		/* NEW - Chrome */
+	order: 2;						/* NEW, Spec - Opera 12.1, Firefox 20+ */   
+}
+	
+.site-content{
+	margin-left: 2em; margin-right:2em; margin-top:0em; margin-bottom:0em;
+	position: relative;
+	/*-webkit-box-flex: 1 0 auto;       OLD - iOS 6-, Safari 3.1-6 */
+	 /*-moz-box-flex: 1 0 auto;         OLD - Firefox 19- */
+  	/*width: 100%; */              /*   For old syntax, otherwise collapses. */
+	-webkit-flex: 1 0 auto;    /* Chrome */
+	-ms-flex: 1 0 auto;        /* IE 10, IE 11*/
+	flex: 1 0 auto;            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	/*width: 100%;*/
+}
+
+.site-footer {
+
+	/*width: 100%;   */            /* For old syntax, otherwise collapses. */
+	-webkit-flex-shrink: 0;    /* Chrome */
+	-ms-flex-shrink: 0;        /* IE 10, IE 11 */
+	flex-shrink: 0;            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	padding:0px;
+	/*border: 1px solid black;*/
+}
+
+.site-footer div{
+	background: #4F4F4F !important;
+	/*background: #3c3c3c !important;*/
+	color: white;	
+}
+.site-footer a{
+	font-size: .75em;
+	padding:10px;
+	color: white;
+} 
+.footer-container {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	/*display: -ms-flexbox;       TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+.footer-container div{
+	-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-flex: 1;         /* OLD - Firefox 19- */
+  	/*width: 100%;   */           /* For old syntax, otherwise collapses. */
+	-webkit-flex: 1;          /* Chrome */
+	-ms-flex: 1;              /* IE 10, IE 11 */
+	flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.footer-column-center {
+	-webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+	-moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+ 	-ms-flex-order: 2;        /* TWEENER - IE 10, IE 11 */
+	-webkit-order: 2;         /* NEW - Chrome */
+	order: 2;  				  /* NEW, Spec - Opera 12.1, Firefox 20+ */   
+	}
+	
+.mailtolink{
+	text-align: left;
+}
+
+.homelink{
+	text-align: center;
+}
+
+.contactuslink{
+	text-align: right;
+	
+}
+
+.headerukflag{
+	/*text-align: left;*/
+}
+
+.headernzflag{
+	/*text-align: right;*/
+}
+.headertxt{
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* format "this Page was last updated" */
+.pgupdated{
+	font-style: italic;
+	font-size: 60%;
+	
+	padding: 0 1em 0 1em;
+}
+
+/* Allows page in page functionality*/
+.zmfluidMedia iframe {
+    position: absolute;
+	top: 0; 
+    left: .25em;
+	width: 99%;
+    height: 99%;
+}
+.wcfluidMedia iframe {
+    position: absolute;
+	top: 0; 
+    left: .25em;
+	width: 99%;
+    height: 99%;
+}
+
+/*Chart Format*/
+
+div#ping_chart_div {
+
+}
+
+div#download_chart_div{
+
+}
+
+div#upload_chart_div{
+	
+}	
+	
+div#chart_title {
+font-size: 117%;
+font-weight: 700;
+text-align: center;
+}
+
+

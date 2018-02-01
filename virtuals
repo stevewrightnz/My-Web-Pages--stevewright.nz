@@ -1,0 +1,44 @@
+#Wanscam Camera on 192.168.20.101:99
+<VirtualHost *:99>
+        ProxyPass / http://192.168.20.101/
+        ProxyPassReverse / http://192.168.20.101/
+        Redirect "/" "http://192.168.20.101:99/"
+</VirtualHost>
+
+#Avtech Camera on 192.168.20.102:98
+<VirtualHost *:98>
+        ProxyPass / http://192.168.20.102/
+        ProxyPassReverse / http://192.168.20.102/
+        Redirect "/" "http://192.168.20.102:98/"
+</VirtualHost>
+
+
+
+
+
+#zm.stevewright.nz
+#Port 80
+<VirtualHost 192.168.20.210:80>
+        ServerName zm.stevewright.nz
+        ServerAlias www.zm.stevewright.nz
+        ProxyPreserveHost Off
+        ProxyPass / http://192.168.20.210/
+        ProxyPassReverse / http://192.168.20.210/
+
+        Redirect "/" "https://zm.stevewright.nz/"
+</VirtualHost>
+
+#Port 443
+<VirtualHost 192.168.20.210:443>
+        ServerName zm.stevewright.nz
+        ServerAlias www.zm.stevewright.nz
+
+        SSLEngine on
+        SSLCertificateFile /etc/letsencrypt/live/stevewright.nz/fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/stevewright.nz/privkey.pem
+        SSLCertificateChainFile /etc/letsencrypt/live/stevewright.nz/fullchain.$
+
+        ProxyPass / http://192.168.20.210/
+        ProxyPassReverse / http://192.168.20.210/
+</VirtualHost>
+

@@ -1,0 +1,30 @@
+/* A CSS style file for the Wright Family web pages */
+@import url(https://stevewright.nz/wrightfamily.css);
+@import url(includes/new_navbar_accordian.css);
+
+
+
+
+
+
+
+
+
+
+/*Mobile formating*/
+@media screen and (max-width: 400px) {
+    body {
+        background-color: pink;
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

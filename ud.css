@@ -1,0 +1,60 @@
+.togglerbuttons {
+height: 24px;
+margin: 0 auto;
+font-size: 12px;
+line-height: 16px;
+}
+
+.icon {
+position: relative;
+width:16px;
+height:16px;
+display: inline-block;
+margin: 0 5px 0 0;
+}
+
+.minusbutton {
+border:1px solid #aaa;
+width: 7px;
+height: 7px;
+position: relative;
+top:0;
+left:0;
+
+}
+.minusbutton:after {
+background-color: #aaa;
+width: 7px;
+height: 1px;
+position: absolute;
+top:3px;
+left: 0px;
+  content:"";
+}
+
+.plusbutton {
+border:1px solid #aaa;
+width: 7px;
+height: 7px;
+position: relative;
+top:0;
+left:0;
+}
+.plusbutton:after {
+background-color: #aaa;
+width: 7px;
+height: 1px;
+position: absolute;
+top:3px;
+left: 0px;
+  content:"";
+}
+.plusbutton:before {
+background-color: #aaa;
+width: 1px;
+height: 7px;
+position: absolute;
+top:0px;
+left: 3px;
+  content:"";
+}

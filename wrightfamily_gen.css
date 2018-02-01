@@ -1,0 +1,15 @@
+/* A CSS style file for the Wright Family Genealogy web pages */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(includes/navbar.css);
+@import url(wrightfamily.css);
+
+.site {
+	background: white url("/images/WilliamWrightPlowland30.png") no-repeat center center fixed;
+	background-size: 25%;
+}
+
+img.resize50 {  /*Resize image to 50% of it's container*/
+	max-width: 50%;
+	max-height:auto;
+}

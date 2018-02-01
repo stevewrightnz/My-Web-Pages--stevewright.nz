@@ -1,0 +1,20 @@
+[Twitter]
+
+ISPSpeed
+
+Application settings
+ 
+Consumer Key (API Key) 			xB9aZhS1L1HjPB5bhXoh8RCCN 
+Consumer Secret (API Secret) 	N2MP1481GZ9Etc2ryNl72DALSFSKRsDRXfYk20y9CSO9ofEG74 
+Access Level 					Read and write
+Owner 							SteveWrightWCC 
+Owner ID 						330727663 
+   
+Access Tokens
+   
+Access Token 					330727663-k3nWrZ6f1Ggc7FjuhW0Kcj2hZT3l4hmQXbeLtiYF 
+Access Token Secret 			InKCr4IreRw4HhjvSNSjUJFWFgDXwY7Q8GnMBQ8xdqFxO 
+Access Level 					Read and write 
+Owner 							SteveWrightWCC 
+Owner ID 						330727663 
+	
