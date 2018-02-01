@@ -1,0 +1,53 @@
+/*A CSS stylesheet for the Wright family Web Pages - fonts*/
+
+@font-face {
+font-family: Texgyreheroscn;
+src: url("/fonts/texgyrehero/texgyreheroscn-regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: normal;
+font-weight: bold;
+src: url("/fonts/texgyrehero/texgyreheroscn-bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: italic;
+font-weight: bold;
+src: url("/fonts/texgyrehero/texgyreheroscn-bolditalic.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: italic;
+font-weight: normal;
+src: url("/fonts/texgyrehero/texgyreheroscn-italic.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+src: url("/fonts/texgyrehero/texgyrehero-regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: normal;
+font-weight: bold;
+src: url("fonts/texgyrehero/texgyrehero-bold.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: italic;
+font-weight: bold;
+src: url("fonts/texgyrehero/texgyrehero-bolditalic.otf") format("opentype");
+}
+
+@font-face {
+font-family: Texgyrehero;
+font-style: italic;
+font-weight: normal;
+src: url("fonts/texgyrehero/texgyrehero-italic.otf") format("opentype");
+}

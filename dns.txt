@@ -1,0 +1,17 @@
+
+     ┌─────────────────────┤ Installation Complete! ├─────────────────────┐
+     │                                                                    │
+     │ Configure your devices to use the Pi-hole as their DNS server      │
+     │ using:                                                             │
+     │                                                                    │
+     │ IPv4:        192.168.1.200                                         │
+     │ IPv6:        fdb8:8d7:b34d:6600:fc7f:bc97:ce46:b587                │
+     │                                                                    │
+     │ If you set a new IP address, you should restart the Pi.            │
+     │                                                                    │
+     │ The install log is in /etc/pihole.                                 │
+     │                                                                    │
+     │ View the web interface at http://pi.hole/admin or                  │
+     │ http://192.168.1.200/admin                                         │
+     │                                                                    │
+     │ Your Admin Webpage login password is unchanged   

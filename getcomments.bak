@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<?php
+
+require_once 'dbconfig.php';
+
+//define variables
+
+try {
+	//connect to batabase
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+	//echo "Connected to database $dbname at $host successfully. <br>";
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$sql = ("SELECT `name`, 
+						`comment`, 
+						`entered`
+				   FROM `comment`
+				");	
+		$result = $pdo->query($sql);
+			
+		//	echo '<h2>Comments</h2>';	
+			
+		//	while($row = $result->fetch(PDO::FETCH_ASSOC)) {
+			
+				$comment = $row['comment'];
+				$name = htmlspecialchars($row['name']);
+				$entered = htmlspecialchars(date('d F Y H:i:s',strtotime($row['entered'])));
+			
+			
+		//	echo 	'Comment: '.$comment. '<br />'. 
+		//			'Posted By: '. '<b>'. $name. '</b><br /> '. 
+		//			'Posted On: '. $entered. '<br /> <br />';
+		//	echo 	'<hr>';
+						
+
+
+
+	}
+	//connection error
+	catch (PDOException $pe) {
+    die("Could not connect to the database $dbname :" . $pe->getMessage());
+	}
+$pdo->close();
+?>
+<head></head>
+<body>
+        <div id="container">
+            <h1>Comments</h1>
+            <table width ="100%" border ="1">
+			<thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Comment</td>
+					<td>Entered</td>
+                </tr>
+			</thead>
+			<tbody>
+			<?php while ($row = $result->FetchALL(PDO::FETCH_ASSOC)) {
+			
+				echo
+				"<tr>
+					<td>".$row['comment']." </td>					
+					<td>".$row['name']." </td>
+					<td>".$row['entered']." </td>
+				</tr>\n";
+				}
+			?>
+			</tbody>
+			</table>	
+<body>			
+	</html>		
+				
+
+				
+	
+				
+
