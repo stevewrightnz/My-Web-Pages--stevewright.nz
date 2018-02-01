@@ -1,0 +1,224 @@
+.menu {
+  margin: 0 auto;
+  padding: 0;
+  width: 350px;
+}
+
+.menu li { list-style: none; }
+
+.menu li a {
+  display: table;
+  margin-top: 1px;
+  padding: 14px 10px;
+  width: 100%;
+  background: #337D88;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: middle;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:first-child a { margin-top: 0; }
+
+.menu li a:hover {
+  background: #4AADBB;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+.menu li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li li a {
+  display: block;
+  margin-top: 0;
+  padding: 0 10px;
+  height: 0;
+  background: #C6DDD9;
+  color: #1F3D39;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a {
+  display: table;
+  margin-top: 1px;
+  padding: 10px;
+  width: 100%;
+  height: 1em;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.menu > li:hover li a:hover {
+  background: #A4CAC8;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/*Styling top level menu items.
+
+.nav a, .nav label {
+
+  list-style: none;
+  margin: 0;	
+  padding: 0;    
+  color: blue;
+  background-color: #fff;
+  /*box-shadow: inset 0 -1px #1d1d1d;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.nav a:focus, .nav a:hover, .nav label:focus, .nav label:hover {
+  /*color: rgba(255, 255, 255, 0.5);
+  background: #030303;
+  text-decoration:underline;
+  	list-style: none;
+  }
+
+.nav label { cursor: pointer; }
+
+/**
+ * Styling first level lists items
+ 
+
+.group-list a, .group-list label {
+  padding-left: 2rem;
+  color:red;
+  /*background: #252525;*/
+  /*box-shadow: inset 0 -1px #373737;
+  list-style-type: none;
+}
+
+.group-list a:focus, .group-list a:hover, .group-list label:focus, .group-list label:hover { background: #fff; }
+
+/**
+ * Styling second level list items
+ 
+
+.sub-group-list a, .sub-group-list label {
+  padding-left: 4rem
+  /*background: #353535;
+  /*box-shadow: inset 0 -1px #474747;
+}
+
+.sub-group-list a:focus, .sub-group-list a:hover, .sub-group-list label:focus, .sub-group-list label:hover { background: #fff; }
+
+/**
+ * Styling third level list items
+ 
+
+.sub-sub-group-list a, .sub-sub-group-list label {
+  padding-left: 6rem;
+  /*background: #454545;
+  /*box-shadow: inset 0 -1px #575757;
+}
+
+.sub-sub-group-list a:focus, .sub-sub-group-list a:hover, .sub-sub-group-list label:focus, .sub-sub-group-list label:hover { background: #fff; }
+
+/**
+ * Hide nested lists
+ 
+
+.group-list, .sub-group-list, .sub-sub-group-list {
+	list-style: none;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
+}
+
+.nav__list input[type=checkbox]:checked + label + ul { /* reset the height when checkbox is checked 
+	list-style-type: none;
+max-height: 1000px; }
+
+
+/*Rotating chevron icon on toggle.
+
+
+label > span {
+  float: right;
+  -webkit-transition: -webkit-transform .65s ease;
+  transition: transform .65s ease;
+}
+
+.nav__list input[type=checkbox]:checked + label > span {
+
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+} 
