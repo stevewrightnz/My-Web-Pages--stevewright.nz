@@ -56,7 +56,7 @@
 	<?php include("lastline.php");?>
 			<h3>My Latest Speedtest</h3>
 		<!-- speedtest.php is built by running speedtest.pl -->	
-	<p>	<?php include("/home/steve/speedtest.php");?> </p>		
+	<!--<p>	<?php include("/home/steve/speedtest.php");?> </p> -->
 	<p>	<?php include("/home/steve/speedtest-python.php");?> </p>	
 	<a href='/home/steve/result.png' <img src='/home/steve/result.png' alt='last speedtest failed' style='width:200px; border:0;'>
 
