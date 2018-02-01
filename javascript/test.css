@@ -1,0 +1,228 @@
+/* A CSS style file for the Wright Family web pages */
+
+/* headings */
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: .67em;
+    margin-bottom: .67em;
+    margin-left: 2em;
+    margin-right: 0;
+    font-weight: bold;
+	color: blue;
+  	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-top: .83em;
+    margin-bottom: .83em;
+    margin-left: 2em;
+    margin-right: 0;
+    font-weight: bold;
+	color: green;
+	text-align: left;
+	/*text-decoration: underline;*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Tables*/
+/* General Tables*/
+table#t001, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table#t002, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table#t003, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table#t004, th, td{
+	width: auto;
+	font-size: 1em;
+	padding: .25em;
+	vertical-align: top;
+	margin-left: 2em;
+	margin-right: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*Contacts Table */
+table#tcontact{
+	width: auto;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Fixed width buttons*/
+
+input[type=button] {
+	width: 15em;  
+	height: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*paragraphs*/
+p{
+	margin-bottom: .67em;
+	margin-top: .67em;
+	/*margin-left: 2em;*/
+	text-align: left;
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Page Layout*/
+
+*{
+	margin: 0
+}
+html, body {
+	font-size: 100%;
+
+	display: -ms-flexbox;      /* TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	
+}
+.site {
+
+	display: -ms-flexbox;      /* TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	width: 100%;
+	height: 100vh;
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	margin-left: 2em;
+	margin-right: 2em;
+	background: lightsteelblue url("/images/wright40.png") no-repeat center center;
+
+    
+}
+.site-header{
+	
+	width: 100%;              /*    For old syntax, otherwise collapses. */
+    -webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	
+}
+
+.site-content {
+	position: relative;
+	width: 100%;               /*   For old syntax, otherwise collapses. */
+	-webkit-flex: 1 0 auto;    /* Chrome */
+	-ms-flex: 1 0 auto;        /* IE 10, IE 11*/
+	flex: 1 0 auto;            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+	
+	width: 100%;
+}
+
+.site-footer {
+
+	 width: 100%;              /* For old syntax, otherwise collapses. */
+	-webkit-flex-shrink: 0;    /* Chrome */
+	-ms-flex-shrink: 0;        /* IE 10, IE 11 */
+	flex-shrink: 0;            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+  
+.footer-container {
+
+	display: -ms-flexbox;      /* TWEENER - IE 10, IE 11 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+.footer-container div {
+
+	 width: 100%;             /* For old syntax, otherwise collapses. */
+	-webkit-flex: 1;          /* Chrome */
+	-ms-flex: 1;              /* IE 10, IE 11 */
+	flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+.footer-column-center {
+
+	-ms-flex-order: 2;        /* TWEENER - IE 10, IE 11 */
+	-webkit-order: 2;         /* NEW - Chrome */
+	order: 2;                 /* NEW, Spec - Opera 12.1, Firefox 20+ */   
+}
+
+
+/* format "this Page was last updated" */
+.pgupdated{
+	font-style: italic;
+	font-size: 50%;
+}
+
+/* Allows page in page functionality*/
+.zmfluidMedia iframe {
+    position: absolute;
+	top: 0; 
+    left: .25em;
+	width: 99%;
+    height: 99%;
+}
+

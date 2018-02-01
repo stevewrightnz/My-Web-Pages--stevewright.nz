@@ -1,0 +1,426 @@
+.screen{
+	margin: auto;
+	background-color:darkgray;
+	width: 85%;
+	
+	border-radius: 5px;
+}
+
+
+
+
+
+.scr-top{
+	column-count: 4;
+	line-height:10px;
+	height:25px;
+	width:auto;
+	border-bottom:solid;
+	border-bottom-width: 1px;
+}
+.scr-middle{
+	margin: auto;
+	position: relative;
+	margin: auto;	
+	height: 53.75px;
+	width:auto;
+}
+
+.scr-bottom{
+	column-count: 4;
+	height: 25px;
+	width:auto;
+	border-top:solid;
+	border-top-width: 1px;
+}
+
+.tempno{
+	display:inline-block;
+	margin: 0 0 5px 10px;
+	width:60%;
+	position: absolute; 
+	bottom:0;
+	/*left:0;*/
+	line-height: 10px;
+	height:45px;
+	vertical-align: text-bottom;
+	font-family:Verdana;
+	font-size:50px;
+	font-weight:100;
+	text-decoration:none;
+	color:white;
+	background-color:darkgray;
+	padding:0px;
+	border-style: solid;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	
+} 
+.degC{
+	
+	color: white;
+
+	
+}
+
+.time{
+	display:inline-block;
+	margin-right: 10px;
+	margin-bottom:-6px;
+	position: absolute; 
+	bottom: 0;
+	right:0;
+	width:50px;
+	line-height:20px;
+	color: white;
+ 	vertical-align: text-bottom;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+	padding-bottom:5px; 
+	/*border:solid;*/
+
+}
+
+.pwronoff{
+	float:left;
+	position: absolute; 
+	margin-left: 10px;
+	color:white;
+	/*font-size: 20px;*/
+	vertical-align: text-bottom;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+	/*border:solid;*/
+}
+.hipwronoff{
+	float:left;
+	position: absolute; 
+	margin-left: 50px;
+	color:white;
+	/*font-size: 20px;*/
+	vertical-align: text-bottom;
+	font-family:Verdana;
+	font-weight:100;
+	text-decoration:none;
+}
+.ecoonoff{
+	float:right;
+	position: absolute; 
+	margin-left: 50px;
+	color:white;
+	/*font-size: 20px;*/
+	vertical-align: text-bottom;
+	font-family:Verdana;
+	font-weight:100;
+	text-decoration:none;
+}
+
+.h2{
+	text-align: center;
+}
+
+/* Buttons*/
+.buttona{
+	display: inline-table;
+	width:70px;
+	height:70px;
+	border-radius:35px;
+	margin: 5px 5px 5px 5px;
+	background-image:url('https://stevewright.nz/images/better-black-button.png');
+	background-repeat:no-repeat;
+	background-size: 100%;
+ }
+
+ .buttonb{
+	display: inline-table;
+	width:70px;
+	height:70px;
+	border-radius:35px;
+	line-height:70px;
+	font-size:0.75em;
+	color:#e2eaf3; 
+	text-align:center;
+	background:#ff9733;
+	margin: 5px 5px 5px 5px;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+}
+ 
+.buttonc{
+	display: inline-block;
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	line-height:50px;
+	font-size:0.75em;
+	color:#e2eaf3; 
+	text-align:center;
+	background:#7b7167; /*orange*/ /*#000; */
+	margin: 5px 5px 5px 5px;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+ }
+ /*Up and Dn buttons*/
+#buttond{display: inline-block;
+ width:40px;
+ height:30px;
+ border-radius:20px 20px 0px 0px;
+ line-height:30px;
+ font-size:0.75em;
+ color:#e2eaf3; 
+ text-align:center;
+ background:#505050; /*#000; */
+ margin: 5px 5px -2px 5px;
+ font-family:Verdana;
+ font-weight:bold;
+ text-decoration:none;
+ }
+ #input.a{display: inline-block;
+ width:40px;
+ height:30px;
+ border-radius:20px 20px 0px 0px;
+ line-height:30px;
+ font-size:0.75em;
+ color:#e2eaf3; 
+ text-align:center;
+ background:#505050; /*#000; */
+ margin: 5px 5px -2px 5px;
+ font-family:Verdana;
+ font-weight:bold;
+ text-decoration:none;
+ }
+ 
+#buttone{
+	display: inline-block;
+	width:40px;
+	height:30px;
+	border-radius:0px 0px 20px 20px;
+	line-height:30px;
+	font-size:0.75em;
+	color:#e2eaf3; 
+	text-align:center;
+	background:#505050; /*#000; */
+	margin: -1px 5px 5px 5px;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+ }
+ .buttonf{display: inline-block;
+ width:50px;
+ height:30px;
+ border-radius:25px 25px 0px 0px;
+ line-height:30px;
+ font-size:0.75em;
+ color:#e2eaf3; 
+ text-align:center;
+ background:Orange; /*#000; */
+ margin: 5px 5px -2px 5px;
+ font-family:Verdana;
+ font-weight:bold;
+ text-decoration:none;
+ }
+ 
+ 
+ .buttong{
+	display: inline-block;
+	width:50px;
+	height:30px;
+	border-radius:0px 0px 25px 25px;
+	line-height:30px;
+	font-size:0.75em;
+	color:#e2eaf3; 
+	text-align:center;
+	background:Orange; /*#000; */
+	margin: -1px 5px 5px 5px;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+ }
+ 
+ 
+ .button-on{
+	display: inline-table;
+	width:80px;
+	height:80px;
+	border-radius:40px;
+	background-image:url('https://stevewright.nz/images/on-off-button-icon-pv.png');
+	background-repeat:no-repeat;
+	background-size: 100%;
+}
+ 
+ 
+.text-row-a{
+	display: inline-block;
+	width:70px;
+	font-size:0.75em;
+	margin: 20px 5px 0px 5px;
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+} 
+ 
+ 
+.text-row-b{
+	display: inline-block;
+	width:60px;
+	font-size:0.75em;
+	margin: 20px 5px 0px 5px;
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+} 
+
+ 
+.text-row-c{
+	display: inline-block;
+	width:50px;
+	font-size:0.5em;
+	margin: 0px 5px 0px 5px;
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+} 
+
+ 
+.text-row-d{
+	display: inline-block;
+	width:50px;
+	font-size:0.5em;
+	margin: 0px 5px 0px 5px;
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+}
+  
+.container{
+	 display: inline-block;
+	 border-style:solid;
+	 border-radius:7px;
+ }
+ 
+  
+.top-div{
+	 display: inline-block;
+	 margin: 0px 2px 20px 2px;
+	 text-align: center;
+ }
+ 
+ 
+.bottom-div{
+	display: inline-block;
+ }
+	
+.button-div{
+	text-align:center;
+	vertical-align:middle;
+}
+
+ .space-even{
+	display: flex;
+	justify-content: space-between;  
+	margin: 0px 0px 0px 0px;
+ }
+  
+.temp-div{
+	display: inline-block;
+	width: 40px;
+	line-height:40px;
+	font-size:0.6em;
+	color:#e2eaf3; 
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+	margin: 0px 0px 0px 0px;
+	background:#505050;
+	}
+	
+.pwr-div{
+	display: inline-block;
+	width: 50px;
+	line-height:40px;
+	font-size:0.6em;
+	color:#e2eaf3; 
+	text-align:center;
+	font-family:Verdana;
+	font-weight:bold;
+	text-decoration:none;
+	margin: 0px 0px 0px 0px;
+	background:Orange;
+
+	}
+
+.button-cluster{
+	width:80px;
+	height:auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: -15px 0px 0px 0px;
+}
+
+.up-arrow{
+	font-size: 1em;
+	transform: scale(1,1.5);
+	margin: 0px 0px 2px 0px;
+	cursor: pointer;
+	}
+
+.dn-arrow{
+	font-size: 1em;
+	transform: scale(1,1.5);
+	margin: -2px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.pwr-button-cluster{
+	
+	width:100px;
+	height:auto;
+	text-align: center;
+	vertical-align: middle;
+	margin: -15px 0px 0px 0px;
+}
+
+
+.on-button{
+	width: 70px;
+	margin: -1px 0px 0px -9px;
+	cursor: pointer;
+}
+
+
+.button-return{
+	height:3em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	border-style: groove;
+	/*border:1px solid black;*/
+	border-radius:5px;
+	margin: 5px 15px 5px 15px;
+	background-color:lightgrey;
+	cursor: pointer;
+}
+
+.button-return:hover{
+		background-color:white;
+	
+}
+.flleft{
+	float:left;
+		
+}
+.flright{
+	float:right;
+		
+}
