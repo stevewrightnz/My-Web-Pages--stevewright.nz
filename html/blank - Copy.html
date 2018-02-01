@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="author" content="Steve Wright">
+<link rel="stylesheet" href="wrightfamily.css">
+<script src="wrightfamily.js"></script>
+<title>Blank Page</title>
+</head>
+<?php 
+	
+	include('includes/header.php');?>
+
+	<main class="site-content">
+
+Stuff in here	
+
+	</main>
+	
+	<?php $pagemodified = filemtime(__FILE__);
+	include("includes/footer.php");?>
+</html>
+</html>

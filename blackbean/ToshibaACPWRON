@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+### ToshibaACT20 A perl script to transmit ir code through RM mini 3
+###
+### Copyright (C) 2016 Steve Wright
+###
+### This program is free software: you can redistribute it and/or modify
+### it under the terms of the GNU General Public License as published by
+### the Free Software Foundation, either version 3 of the License, or
+### any later version.
+###
+### This program is distributed in the hope that it will be useful, but
+### WITHOUT ANY WARRANTY; without even the implied warranty of
+### MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+### General Public License at [http://www.gnu.org/licenses/GPL-3.0] for
+### more details.
+###
+### Usage: perl ToshibaAC20 
+### 
+use strict;
+use warnings;
+
+# run speedtest
+system ('sudo python /home/steve/blackbean/BlackBeanControl.py -c ToshibaACPWRON -i 192.168.1.113 -p 80 -m 34:EA:34:E3:CC:54 -t 1') == 0
+        or die "failed\n";
+

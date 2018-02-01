@@ -1,0 +1,237 @@
+/* A CSS style sheet for my navbar*/
+
+
+/*navbar css*/
+#navwrapper {
+	width:auto;
+	height: auto;
+	margin:0 auto;
+	/*margin-top:100px;*/
+	list-style-type: none;
+	overflow: visible;
+	/*border:5px solid purple;*/
+	clear:both;
+	 
+}
+
+#navbar{
+	list-style-type: none;
+	/*border:5px solid aqua;*/
+	height: auto;
+    clear:both;
+}
+
+
+
+#nav {
+	list-style-type: none;
+	position:relative;
+	width:auto;
+	height:auto;
+	margin:0 auto;
+	/*border:5px solid  yellow;*/
+    clear:both;
+}
+
+
+ul#navigation {
+    margin:0px auto;
+    position:relative;
+    float:left;
+	width:95.5%;
+    /*border:5px solid black;*/
+	clear:both;
+	height: auto;
+}
+
+ul#navigation li {
+    display:inline;
+    /*font-size:12px;*/
+    /*font-weight:bold;*/
+    margin:0  auto;
+	height:auto;
+    padding: 0 5px 0 5px; /*The space around the navbar items*/
+    float:left;
+    position:relative;
+    /*border:5px solid red;*/
+
+}
+
+/*First Level*/
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    opacity:0;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear; /* Chrome &amp; Safari*/
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;  /*Mozilla Firefox*/
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;  /* Opera */
+    transition:opacity 0.2s linear, visibility 0.2s linear;    
+    /*border:5px solid lime;*/
+	
+}
+ul#navigation li a:hover {
+    background:#f8f8f8;
+    /*color:#282828;*/
+}
+
+ul#navigation li:hover > a {
+    background:#fff;
+}
+
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+    visibility:visible;
+    opacity:1;
+}
+
+/*Second Level*/
+ul#navigation ul, ul#navigation ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+    width:180px;
+    background:#f8f8f8;
+    box-shadow:0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    opacity:0;
+    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+    transition:opacity 0.2s linear, visibility 0.2s linear;   
+}
+
+ul#navigation ul {
+    top: 33px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px;
+}
+
+ul#navigation ul li {
+    clear:both;
+    width:100%;
+    border:0 none;
+    /*border-bottom:1px solid #c9c9c9;*/
+}
+
+ul#navigation ul li a {
+    background:none;
+    padding:1px 1px;
+    /*color:#616161;*/
+    text-shadow:1px 1px 0px #fff;
+    text-decoration:none;
+    display:inline-block;
+    border:0 none;
+    float:left;
+    clear:both;
+    /*width:150px;*/
+}
+
+ul#navigation li a.first {
+    border-left: 0px none;
+}
+
+ul#navigation li a.last {
+    border-right: 0px none;
+	
+}
+
+
+/*Search Box*/
+#searchbox {
+	border: 5px solid #ccc;
+	position: relative;  
+	float:right;
+	clear:both;
+}
+
+input.rounded {
+	border: 1px solid #ccc;
+	/*-moz-border-radius: 5px;*/
+	border-radius: 5px;
+	/*-moz-box-shadow: 2px 2px 3px #666;*/
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 0.75em;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+	float:left;
+}
+
+input.rounded:focus {
+	border-color: #0000FF;
+}
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
+	font-style: normal;
+	font-weight: bold;	
+	color: #0000FF;
+	
+}
+input[type='radio'] {
+	color: #0000FF
+	
+}
+div.radio {
+	font-size: 0.75em;
+	font-weight: 500;
+	color: #0000FF;
+	}
+	
+input[type=button] {
+
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px; 
+	font-style: normal;
+	font-weight: bold;
+	width: 20em;  
+	height: 2em;
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
